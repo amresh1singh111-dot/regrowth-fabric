@@ -1,0 +1,31 @@
+{
+	"display": {
+		"icon": {
+			"count":1,
+			"id": "minecraft:bell"
+		},
+		"title": {
+			"translate": "advancements.rgroot.title"
+		},
+		"description": {
+			"translate": "advancements.rgroot.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": false,
+		"hidden": false,
+		"background": "regrowth:textures/gui/advancements/backgrounds/rgbackground.png"
+	},
+	"criteria": {
+		"has_traded": {
+			"trigger": "minecraft:villager_trade",
+			"conditions": {
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_traded"
+		]
+	]
+}

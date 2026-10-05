@@ -1,0 +1,46 @@
+{
+	"parent": "regrowth:rgroot/rgroot",
+	"display": {
+		"title": {
+			"translate": "advancements.offlimits.title",
+			"color": "white"
+		},
+		"description": {
+			"translate": "advancements.offlimits.description",
+			"color": "white"
+		},
+		"icon": {
+			"count":1,
+			"id": "minecraft:stone_shovel"
+		},
+		"announce_to_chat": false
+	},
+	"rewards": {
+		"experience": 1
+	},
+	"criteria": {
+		"has_traded": {
+			"trigger": "minecraft:villager_trade",
+			"conditions": {
+			}
+		},
+		"has_shovel": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "#minecraft:shovels"
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_traded"
+		],
+		[
+			"has_shovel"
+		]
+	]
+}

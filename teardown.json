@@ -1,0 +1,46 @@
+{
+	"parent": "regrowth:rgroot/rgroot",
+	"display": {
+		"title": {
+			"translate": "advancements.teardown.title",
+			"color": "white"
+		},
+		"description": {
+			"translate": "advancements.teardown.description",
+			"color": "white"
+		},
+		"icon": {
+			"count":1,
+			"id": "minecraft:cobblestone_wall"
+		},
+		"announce_to_chat": false
+	},
+	"rewards": {
+		"experience": 1
+	},
+	"criteria": {
+		"has_traded": {
+			"trigger": "minecraft:villager_trade",
+			"conditions": {
+			}
+		},
+		"has_wall": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "#minecraft:walls"
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_traded"
+		],
+		[
+			"has_wall"
+		]
+	]
+}

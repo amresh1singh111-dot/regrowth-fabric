@@ -1,0 +1,46 @@
+{
+	"parent": "regrowth:rgroot/rgroot",
+	"display": {
+		"icon": {
+			"count":1,
+			"id": "minecraft:oak_leaves"
+		},
+		"title": {
+			"translate": "advancements.saferhedges.title",
+			"color": "white"
+		},
+		"description": {
+			"translate": "advancements.saferhedges.description",
+			"color": "white"
+		},
+		"announce_to_chat": false
+	},
+	"criteria": {
+		"has_traded": {
+			"trigger": "minecraft:villager_trade",
+			"conditions": {
+			}
+		},
+		"has_oak_leaves": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "#minecraft:leaves"
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_traded"
+		],
+		[
+			"has_oak_leaves"
+		]
+	],
+	"rewards": {
+		"experience": 1
+	}
+}

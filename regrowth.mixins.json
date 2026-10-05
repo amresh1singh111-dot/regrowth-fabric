@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.mactso.regrowth.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "LivingEntityMixin",
+    "FarmlandBlockMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
